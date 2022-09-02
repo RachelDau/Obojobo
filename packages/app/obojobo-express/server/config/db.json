@@ -1,0 +1,42 @@
+{
+	"default": {
+		"driver": "postgres",
+		"user": "",
+		"password": "",
+		"host": "",
+		"database": "",
+		"port": 5432,
+		"ssl": { "rejectUnauthorized": false },
+		"useBluebird": false,
+		"query_timeout": 29000,
+		"statement_timeout": 29000
+	},
+	"test": {
+		"user": "postgres",
+		"password": "mysecretpassword",
+		"host": "127.0.0.1",
+		"database": "postgres",
+		"useBluebird": true
+	},
+	"development":{
+		"driver": "postgres",
+		"user": "postgres",
+		"password": "mysecretpassword",
+		"host": "127.0.0.1",
+		"database": "postgres",
+		"ssl": false,
+		"useBluebird": true,
+		"query_timeout": 29000,
+		"statement_timeout": 29000
+	},
+	"production":{
+		"user":  {"ENV": "DB_USER"},
+		"password": {"ENV": "DB_PASS"},
+		"host": {"ENV": "DB_HOST"},
+		"database": {"ENV": "DB_NAME"},
+		"port": {"ENV": "DB_PORT"},
+		"ssl": {"ENV": "DB_SSL_JSON"},
+		"query_timeout": {"ENV": "DB_TIMEOUT"},
+		"statement_timeout": {"ENV": "DB_TIMEOUT"}
+	}
+}

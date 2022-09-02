@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question editor plugins.renderNode renders a question when passed 1`] = `
+<SlateWrapper
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "type": "ObojoboDraft.Chunks.Question",
+    }
+  }
+/>
+`;
+
+exports[`Question editor plugins.renderNode renders a solution when passed 1`] = `
+<SlateWrapper
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "subtype": "ObojoboDraft.Chunks.Question.Solution",
+    }
+  }
+/>
+`;

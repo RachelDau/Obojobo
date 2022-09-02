@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+/* =============================================================
+WHAT
+A Sample wrapper script thats needed to start an Obojobo Server.
+
+WHY
+You may want to customize obojobo by adding your own middleware
+or Express.js modules.
+
+HOW
+yarn run start_obojobo_server
+============================================================= */
+
+// load the default obojobo express app
+const app = require('../server/app');
+
+// provide the default logger
+const logger = require('../server/logger');
+
+// load the utilities used to start the http server and attach
+// the express app
+const startServer = require('../server/http_server.js')
+
+// do it
+const server = startServer(app, logger, process.env.PORT)

@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Image component with a custom url of a custom size 1`] = `
+<img
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/200x100"
+  style={
+    Object {
+      "height": "100px",
+      "width": "200px",
+    }
+  }
+  unselectable="on"
+/>
+`;
+
+exports[`Image Image component with height only 1`] = `
+<img
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/*x100"
+  style={
+    Object {
+      "height": "100px",
+    }
+  }
+  unselectable="on"
+/>
+`;
+
+exports[`Image Image component with no url 1`] = `
+<div
+  className="img-placeholder"
+/>
+`;
+
+exports[`Image Image component with no width and no height 1`] = `
+<img
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/original"
+  style={Object {}}
+  unselectable="on"
+/>
+`;
+
+exports[`Image Image component with width only 1`] = `
+<img
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/100x*"
+  style={
+    Object {
+      "width": "100px",
+    }
+  }
+  unselectable="on"
+/>
+`;
+
+exports[`Image Large image component 1`] = `
+<img
+  alt="alt text"
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/large"
+  style={Object {}}
+  unselectable="on"
+/>
+`;
+
+exports[`Image Medium image component 1`] = `
+<img
+  alt="alt text"
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/medium"
+  style={Object {}}
+  unselectable="on"
+/>
+`;
+
+exports[`Image Small image component 1`] = `
+<img
+  alt="alt text"
+  className="obojobo-draft--chunks--figure--image is-valid is-not-loaded"
+  loading="lazy"
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/api/media/52727a4f-0970-4b2c-941a-ce8027078b40/small"
+  style={Object {}}
+  unselectable="on"
+/>
+`;

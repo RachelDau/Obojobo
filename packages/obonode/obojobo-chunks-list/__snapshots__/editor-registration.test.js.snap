@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List editor plugins.decorate exits when not relevent 1`] = `Array []`;
+
+exports[`List editor plugins.decorate exits when not relevent 2`] = `Array []`;
+
+exports[`List editor plugins.decorate renders a placeholder 1`] = `
+Array [
+  Object {
+    "anchor": undefined,
+    "focus": undefined,
+    "placeholder": "Type your text here",
+  },
+]
+`;
+
+exports[`List editor plugins.renderNode renders a level when passed 1`] = `
+<Level
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "content": Object {},
+      "subtype": "ObojoboDraft.Chunks.List.Level",
+      "type": "ObojoboDraft.Chunks.List",
+    }
+  }
+/>
+`;
+
+exports[`List editor plugins.renderNode renders a line when passed 1`] = `
+<Line
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "content": Object {},
+      "subtype": "ObojoboDraft.Chunks.List.Line",
+      "type": "ObojoboDraft.Chunks.List",
+    }
+  }
+/>
+`;
+
+exports[`List editor plugins.renderNode renders code when passed 1`] = `
+<SlateWrapper
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "content": Object {},
+      "type": "ObojoboDraft.Chunks.List",
+    }
+  }
+/>
+`;

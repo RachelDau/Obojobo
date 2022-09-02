@@ -1,0 +1,108 @@
+@import '~styles/includes';
+
+.obojobo-draft--components--button {
+	@mixin disabled() {
+		background-color: $color-bg2;
+		cursor: default;
+		color: $color-text-minor;
+		border: 1px solid $color-transparent;
+		border-bottom: 1px solid $color-transparent;
+		opacity: 1;
+	}
+
+	display: inline-block;
+
+	.button {
+		user-select: none;
+		cursor: pointer;
+		font-family: $font-default;
+		font-size: 0.85em;
+		position: relative;
+		min-width: 3.25em;
+		border-radius: 0.2em;
+		padding: 0.6rem 1em;
+		background-color: $color-button-bg;
+		color: $color-bg;
+		border: 1px solid $color-transparent;
+		border-bottom: 1px solid darken($color-action, 20%);
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 1px $color-bg, 0 0 0 3px $color-browser-focus;
+		}
+	}
+
+	&.is-dangerous {
+		button {
+			background-color: $color-dangerous;
+			border-bottom: 1px solid darken($color-action, 20%);
+		}
+	}
+
+	&.alt-action {
+		button {
+			border: 1px solid $color-action;
+			border-bottom: 1px solid $color-action;
+			background-color: $color-bg;
+			color: $color-action;
+		}
+	}
+
+	&.alt-action.is-dangerous {
+		button {
+			border: 1px solid $color-dangerous;
+			border-bottom: 1px solid $color-dangerous;
+			background-color: $color-bg;
+			color: $color-dangerous;
+		}
+	}
+
+	.button:hover {
+		background-color: $color-action;
+	}
+
+	.button:disabled {
+		@include disabled();
+	}
+
+	&.is-dangerous button:hover {
+		background-color: $color-dangerous-minor;
+		color: $color-bg;
+	}
+
+	&.alt-action button:hover {
+		background-color: $color-action;
+		color: $color-bg;
+	}
+
+	&.alt-action button:disabled {
+		@include disabled();
+
+		background-color: $color-bg;
+		cursor: not-allowed;
+		color: $color-text;
+		border: 1px solid $color-text;
+		opacity: 0.4;
+	}
+
+	&.alt-action.is-dangerous button:hover {
+		background-color: $color-dangerous;
+		color: $color-bg;
+	}
+
+	&.alt-action.is-dangerous button:disabled {
+		@include disabled();
+	}
+
+	&.align-left {
+		text-align: left;
+	}
+
+	&.align-right {
+		text-align: right;
+	}
+
+	&.align-center {
+		text-align: center;
+	}
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MCAssessment Answer Choices Renders 1`] = `
+<div
+  role="radiogroup"
+>
+  <div />
+</div>
+`;

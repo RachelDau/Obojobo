@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextUtil parseMarkings converts empty styleList to leaves 1`] = `
+Array [
+  Object {
+    "text": "",
+  },
+]
+`;
+
+exports[`TextUtil parseMarkings converts styleList to leaves 1`] = `
+Array [
+  Object {
+    "b": true,
+    "text": "This",
+  },
+  Object {
+    "i": true,
+    "q": true,
+    "text": "Text",
+  },
+  Object {
+    "color": "#000000",
+    "del": true,
+    "num": 13,
+    "q": true,
+    "sup": true,
+    "text": "Is",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "color": "#000000",
+        "num": 13,
+        "sup": true,
+        "text": "Form",
+      },
+    ],
+    "href": "mockLink",
+    "type": "a",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "text": "atted",
+      },
+    ],
+    "href": "mockOtherLink",
+    "type": "a",
+  },
+]
+`;
+
+exports[`TextUtil parseMarkings converts styleList to leaves 2`] = `
+Array [
+  Object {
+    "b": true,
+    "text": "This",
+  },
+  Object {
+    "i": true,
+    "q": true,
+    "text": "Text",
+  },
+  Object {
+    "del": true,
+    "num": 0,
+    "q": true,
+    "sup": true,
+    "text": "Is",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "num": 0,
+        "sup": true,
+        "text": "Fo",
+      },
+      Object {
+        "num": -13,
+        "sup": true,
+        "text": "rm",
+      },
+      Object {
+        "text": "atted",
+      },
+    ],
+    "href": "mockLink",
+    "type": "a",
+  },
+]
+`;
+
+exports[`TextUtil parseMarkings creates leaves without styleList 1`] = `
+Array [
+  Object {
+    "text": "ThisTextIsFormatted",
+  },
+]
+`;
+
+exports[`TextUtil slateToOboText converts a text node to a textGroup 1`] = `
+Object {
+  "data": Object {
+    "indent": 0,
+  },
+  "text": Object {
+    "styleList": Array [
+      Object {
+        "data": Object {},
+        "end": 4,
+        "start": 0,
+        "type": "b",
+      },
+      Object {
+        "data": Object {},
+        "end": 18,
+        "start": 14,
+        "type": "b",
+      },
+      Object {
+        "data": Object {},
+        "end": 8,
+        "start": 4,
+        "type": "i",
+      },
+      Object {
+        "data": Object {},
+        "end": 10,
+        "start": 8,
+        "type": "del",
+      },
+      Object {
+        "data": Object {
+          "href": "mockotherURL",
+        },
+        "end": 23,
+        "start": 18,
+        "type": "a",
+      },
+      Object {
+        "data": Object {
+          "href": "mockURL",
+        },
+        "end": 18,
+        "start": 14,
+        "type": "a",
+      },
+      Object {
+        "data": Object {},
+        "end": 10,
+        "start": 4,
+        "type": "q",
+      },
+      Object {
+        "data": Object {},
+        "end": 26,
+        "start": 23,
+        "type": "monospace",
+      },
+      Object {
+        "data": 14,
+        "end": 18,
+        "start": 14,
+        "type": "sup",
+      },
+      Object {
+        "data": 13,
+        "end": 10,
+        "start": 8,
+        "type": "sup",
+      },
+      Object {
+        "data": Object {},
+        "end": 26,
+        "start": 23,
+        "type": "_latex",
+      },
+      Object {
+        "data": Object {
+          "text": "#000000",
+        },
+        "end": 14,
+        "start": 10,
+        "type": "color",
+      },
+    ],
+    "value": "ThisTextIstextFormattedabc",
+  },
+}
+`;

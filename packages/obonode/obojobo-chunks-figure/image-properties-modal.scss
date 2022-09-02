@@ -1,0 +1,116 @@
+@import '~styles/includes';
+
+.obojobo-draft--components--modal--settings-dialog .image-properties .row {
+	margin-bottom: 0;
+}
+
+.image-properties {
+	text-align: left;
+	display: flex;
+	width: 22em;
+	margin: 0 auto;
+
+	&.is-size-large,
+	&.is-size-medium {
+		.caption-width-label {
+			opacity: 0.5;
+		}
+	}
+
+	label {
+		margin-top: 0.7rem;
+		margin-bottom: 0.3em;
+	}
+
+	input[type='text'] {
+		@include text-input();
+
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	input[type='number'] {
+		@include text-input();
+
+		width: 6em;
+		margin-right: 0.5em;
+	}
+
+	fieldset {
+		text-align: left;
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	select {
+		// vertical-align: top;
+		// font-size: 0.8em;
+		// margin-top: 0.2em;
+		// height: 1.8em;
+		width: 100%;
+
+		@include select-input();
+	}
+
+	.size-input {
+		display: flex;
+		align-items: center;
+
+		.custom-size-inputs {
+			display: flex;
+			align-items: center;
+			padding-left: 0.5em;
+		}
+
+		input {
+			margin-left: 0;
+		}
+
+		span {
+			padding-right: 0.3em;
+		}
+
+		label {
+			padding-left: 0.3em;
+			margin: 0;
+		}
+	}
+
+	.flex-container {
+		display: flex;
+		align-items: center;
+		padding: 1rem 0;
+		background-color: $color-bg2;
+
+		&.image-container {
+			justify-content: center;
+			flex-direction: column;
+
+			button {
+				font-size: 0.8rem;
+				padding: 0.5rem;
+				margin-top: 1rem;
+			}
+
+			img {
+				max-width: 20rem;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.image-preview {
+		font-size: 0.8em;
+
+		&.image-preview-placeholder {
+			height: 100px; /* stylelint-disable-line unit-disallowed-list */
+			width: 150px; /* stylelint-disable-line unit-disallowed-list */
+			line-height: 100px; /* stylelint-disable-line unit-disallowed-list */
+			text-align: center;
+			box-sizing: border-box;
+			background: darken($color-bg2, 10%);
+			color: $color-text-minor;
+		}
+	}
+}

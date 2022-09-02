@@ -1,0 +1,23 @@
+@import '../../../scss/includes';
+
+.visual-editor--editor-app {
+	margin-bottom: 10rem;
+
+	span::selection {
+		background-color: highlight; /* stylelint-disable-line sh-waqar/declaration-use-variable */
+		color: inherit; /* stylelint-disable-line sh-waqar/declaration-use-variable */
+	}
+
+	.draft-toolbars {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: $z-index-above-all;
+		background-color: $color-bg;
+	}
+
+	code {
+		font-family: $font-monospace;
+	}
+}

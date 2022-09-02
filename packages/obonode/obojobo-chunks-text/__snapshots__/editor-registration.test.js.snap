@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text editor plugins.decorate exits when not relevent 1`] = `Array []`;
+
+exports[`Text editor plugins.decorate exits when not relevent 2`] = `Array []`;
+
+exports[`Text editor plugins.decorate renders a placeholder 1`] = `
+Array [
+  Object {
+    "anchor": undefined,
+    "focus": undefined,
+    "placeholder": "Type your text here",
+  },
+]
+`;
+
+exports[`Text editor plugins.renderNode renders a line when passed 1`] = `
+<Line
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "subtype": "ObojoboDraft.Chunks.Text.TextLine",
+      "type": "ObojoboDraft.Chunks.Text",
+    }
+  }
+/>
+`;
+
+exports[`Text editor renderNode renders text when passed 1`] = `
+<SlateWrapper
+  element={
+    Object {
+      "type": "ObojoboDraft.Chunks.Text",
+    }
+  }
+/>
+`;

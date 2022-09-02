@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MCAssessmentViewerComponent Component renders (shuffle enabled) 1`] = `
+<div
+  className="component obojobo-draft--chunks--mc-assessment is-response-type-null is-mode-mock-mode is-type-default is-responded-to mock-score-class is-not-scored"
+  data-focussed={false}
+  data-id="mock-id"
+  data-obo-component={true}
+  data-type="mock-id"
+  id="mock-id"
+  tabIndex={-1}
+>
+  <div
+    role="radiogroup"
+  />
+</div>
+`;
+
+exports[`MCAssessmentViewerComponent Component renders 1`] = `
+<div
+  className="component obojobo-draft--chunks--mc-assessment is-response-type-null is-mode-mock-mode is-type-default is-responded-to mock-score-class is-not-scored"
+  data-focussed={false}
+  data-id="mock-id"
+  data-obo-component={true}
+  data-type="mock-id"
+  id="mock-id"
+  tabIndex={-1}
+>
+  <div
+    role="radiogroup"
+  />
+</div>
+`;
+
+exports[`MCAssessmentViewerComponent getInstructions() [responseType=pick-all, questionType=default] matches snapshot 1`] = `
+<React.Fragment>
+  <span
+    className="for-screen-reader-only"
+  >
+    Multiple choice form with 3 choices. 
+  </span>
+  <span>
+    Pick 
+    <b>
+      all
+    </b>
+     of the correct answers
+  </span>
+</React.Fragment>
+`;
+
+exports[`MCAssessmentViewerComponent getInstructions() [responseType=pick-all, questionType=survey] matches snapshot 1`] = `
+<React.Fragment>
+  <span
+    className="for-screen-reader-only"
+  >
+    Multiple choice form with 3 choices. 
+  </span>
+  <span>
+    Choose one or more
+  </span>
+</React.Fragment>
+`;
+
+exports[`MCAssessmentViewerComponent getInstructions() [responseType=pick-one, questionType=default] matches snapshot 1`] = `
+<React.Fragment>
+  <span
+    className="for-screen-reader-only"
+  >
+    Multiple choice form with 3 choices. 
+  </span>
+  <span>
+    Pick the correct answer
+  </span>
+</React.Fragment>
+`;
+
+exports[`MCAssessmentViewerComponent getInstructions() [responseType=pick-one, questionType=survey] matches snapshot 1`] = `
+<React.Fragment>
+  <span
+    className="for-screen-reader-only"
+  >
+    Multiple choice form with 3 choices. 
+  </span>
+  <span>
+    Choose one
+  </span>
+</React.Fragment>
+`;
+
+exports[`MCAssessmentViewerComponent getInstructions() [responseType=pick-one-multiple-correct, questionType=default] matches snapshot 1`] = `
+<React.Fragment>
+  <span
+    className="for-screen-reader-only"
+  >
+    Multiple choice form with 3 choices. 
+  </span>
+  <span>
+    Pick one of the correct answers
+  </span>
+</React.Fragment>
+`;
+
+exports[`MCAssessmentViewerComponent getInstructions() [responseType=pick-one-multiple-correct, questionType=survey] matches snapshot 1`] = `
+<React.Fragment>
+  <span
+    className="for-screen-reader-only"
+  >
+    Multiple choice form with 3 choices. 
+  </span>
+  <span>
+    Choose one
+  </span>
+</React.Fragment>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttemptIncompleteDialog AttemptIncompleteDialog component 1`] = `
+<div
+  className="obojobo-draft--components--modal--dialog "
+  style={
+    Object {
+      "width": "35rem",
+    }
+  }
+>
+  <div
+    aria-labelledby="obojobo-draft--components--modal--modal--content"
+    className="obojobo-draft--components--modal--modal"
+    role="dialog"
+    tabIndex="-1"
+  >
+    <input
+      aria-label="Start of dialog"
+      className="first-tab"
+      onFocus={[Function]}
+      type="text"
+    />
+    <div
+      className="content"
+      id="obojobo-draft--components--modal--modal--content"
+    >
+      <div
+        className="dialog-content"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <b>
+          Wait! You left some questions blank.
+        </b>
+        <br />
+        Finish answering all questions and submit again.
+      </div>
+      <div
+        className="controls"
+      >
+        <div
+          className="obojobo-draft--components--button alt-action is-dangerous align-center"
+          contentEditable={false}
+        >
+          <button
+            className="button"
+            contentEditable={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Submit as incomplete
+          </button>
+        </div>
+        <span
+          className="text"
+        >
+          or
+        </span>
+        <div
+          className="obojobo-draft--components--button is-not-dangerous align-center"
+          contentEditable={false}
+        >
+          <button
+            className="button"
+            contentEditable={false}
+            type="button"
+          >
+            Resume assessment
+          </button>
+        </div>
+      </div>
+    </div>
+    <input
+      aria-label="End of dialog"
+      className="last-tab"
+      onFocus={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;

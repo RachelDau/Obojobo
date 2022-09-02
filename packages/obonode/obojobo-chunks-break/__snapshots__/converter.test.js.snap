@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Break Converter oboToSlate converts an OboNode to a Slate node 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "text": "",
+    },
+  ],
+  "content": Object {
+    "triggers": "mock-triggers",
+    "width": "large",
+  },
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;
+
+exports[`Break Converter slateToObo converts a Slate node to an OboNode with content 1`] = `
+Object {
+  "children": Array [],
+  "content": Object {},
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;

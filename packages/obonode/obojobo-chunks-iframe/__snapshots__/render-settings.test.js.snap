@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render-settings getRenderSettings 1`] = `
+Object {
+  "afterStyle": Object {
+    "height": 480,
+  },
+  "ariaRegionLabel": "External content from src.",
+  "controlsOpts": Object {
+    "isControlsEnabled": false,
+    "newWindow": false,
+    "reload": false,
+    "zoom": false,
+  },
+  "displayedTitle": "src",
+  "iframeStyle": Object {
+    "height": "130.6122448979592%",
+    "transform": "scale(0.765625)",
+    "width": "130.6122448979592%",
+  },
+  "isAtMaxScale": false,
+  "isAtMinScale": false,
+  "isShowing": false,
+  "scaleDimensions": Object {
+    "containerStyle": Object {
+      "width": 640,
+    },
+    "scale": 0.765625,
+  },
+  "zoomValues": Object {
+    "currentZoom": 1,
+    "defaultZoom": 1,
+    "isZoomAtDefault": true,
+  },
+}
+`;

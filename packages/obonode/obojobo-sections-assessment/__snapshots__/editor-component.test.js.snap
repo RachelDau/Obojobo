@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Assessment editor Node component 1`] = `
+<div
+  className="obojobo-draft--sections--assessment"
+/>
+`;

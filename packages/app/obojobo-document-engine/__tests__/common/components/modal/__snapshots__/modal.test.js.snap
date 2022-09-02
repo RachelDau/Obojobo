@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Modal 1`] = `
+<div
+  aria-labelledby="obojobo-draft--components--modal--modal--content"
+  className="obojobo-draft--components--modal--modal mockClassName"
+  role="dialog"
+  tabIndex="-1"
+>
+  <input
+    aria-label="Start of dialog"
+    className="first-tab"
+    onFocus={[Function]}
+    type="text"
+  />
+  <div
+    className="obojobo-draft--components--delete-button"
+  >
+    <button
+      onClick={[MockFunction]}
+    >
+      Delete
+    </button>
+  </div>
+  <div
+    className="content"
+    id="obojobo-draft--components--modal--modal--content"
+  >
+    Content
+  </div>
+  <input
+    aria-label="End of dialog"
+    className="last-tab"
+    onFocus={[Function]}
+    type="text"
+  />
+</div>
+`;

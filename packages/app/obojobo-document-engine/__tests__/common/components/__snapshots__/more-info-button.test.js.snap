@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoreInfoButton Renders default props 1`] = `
+<div
+  className="obojobo-draft--components--more-info-button is-default-label is-mode-hidden"
+>
+  <button
+    aria-label="More info"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    type="button"
+  >
+    ?
+  </button>
+</div>
+`;
+
+exports[`MoreInfoButton Renders label 1`] = `
+<div
+  className="obojobo-draft--components--more-info-button is-not-default-label is-mode-hidden"
+>
+  <button
+    aria-label="More info"
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    type="button"
+  >
+    Testing 123
+  </button>
+</div>
+`;

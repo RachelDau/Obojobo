@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading Editor Node Heading component 1`] = `
+<div>
+  <div
+    className="text-chunk obojobo-draft--chunks--heading pad"
+  >
+    <h1>
+      <span
+        className="obo-text align-undefined"
+      />
+    </h1>
+  </div>
+</div>
+`;

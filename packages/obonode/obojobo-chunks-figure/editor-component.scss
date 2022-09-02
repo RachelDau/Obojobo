@@ -1,0 +1,77 @@
+@import '~styles/includes';
+
+.obojobo-draft--chunks--figure {
+	.accessibility-warning {
+		font-family: $font-default;
+	}
+
+	.figure-box {
+		cursor: default;
+		position: relative;
+		border: 3px solid transparentize($color-action, 0.7);
+		user-select: none;
+
+		.obojobo-draft--components--button {
+			transition: opacity 0.2s linear 0.2s;
+			opacity: 0;
+		}
+
+		&.is-selected {
+			border: 3px solid $color-action;
+
+			.obojobo-draft--components--button {
+				transition: opacity 0s;
+				opacity: 1;
+			}
+		}
+
+		&:hover {
+			border: 3px solid $color-action;
+
+			.obojobo-draft--components--button {
+				transition: opacity 0s;
+				opacity: 1;
+			}
+		}
+
+		&.drag-over {
+			border: 3px dashed transparentize($color-action, 0.7);
+		}
+
+		.image-toolbar {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			transform: translate(0, -50%);
+
+			.obojobo-draft--components--button {
+				margin-top: 0.2em;
+				margin-bottom: 0.2em;
+			}
+		}
+
+		.error-message {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -1em;
+			color: $color-error;
+		}
+
+		.delete-button {
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: translate(50%, -50%);
+			z-index: 3;
+
+			button {
+				font-size: 1.2em;
+				padding: 0;
+				min-width: 1.3em;
+				border-radius: 50%;
+			}
+		}
+	}
+}

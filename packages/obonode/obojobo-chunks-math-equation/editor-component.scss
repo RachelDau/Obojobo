@@ -1,0 +1,96 @@
+@import '~styles/includes';
+
+.obojobo-draft--chunks--math-equation {
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+
+	.katex-container {
+		user-select: none;
+	}
+
+	.katex-error {
+		font-family: $font-default;
+		text-align: center;
+	}
+
+	.no-equation {
+		font-family: $font-default;
+	}
+
+	.attributes-box {
+		position: absolute;
+		text-align: center;
+		border-radius: $dimension-rounded-radius;
+		font-size: 0.75em;
+		left: 50%;
+		bottom: -6em;
+		transform: translate(-50%, 0);
+		font-family: $font-default;
+		box-sizing: border-box;
+		min-height: 2.5em;
+		background-color: $color-bg2;
+		box-shadow: $box-shadow-overlay;
+		z-index: 9;
+
+		&.is-open {
+			bottom: -33.5em;
+			width: 23em;
+		}
+
+		@mixin point() {
+			content: ' ';
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(45deg);
+			width: 1.72em;
+			height: 1.72em;
+			border-radius: $dimension-rounded-radius 0;
+			z-index: -1;
+		}
+
+		.box-border {
+			background-color: $color-bg2;
+			padding: 1em;
+		}
+
+		&::before {
+			@include point();
+
+			background-color: $color-bg2;
+			box-shadow: -$box-shadow-overlay;
+		}
+
+		.attributes-list {
+			background-color: $color-bg;
+			border-radius: $dimension-rounded-radius;
+
+			.obojobo-draft--components--button {
+				padding-bottom: 0.5em;
+			}
+
+			.attribute {
+				display: inline-block;
+				padding: 0.5em;
+			}
+
+			label {
+				display: block;
+				font-weight: bold;
+				text-align: left;
+			}
+
+			input,
+			textarea {
+				@include text-input();
+
+				width: 22em;
+			}
+
+			textarea {
+				height: 9em;
+				resize: none;
+			}
+		}
+	}
+}

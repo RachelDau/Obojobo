@@ -1,0 +1,68 @@
+@import '~styles/includes';
+
+.visual-editor--content-toolbar {
+	margin: 0 auto;
+	padding-right: 0.4em;
+	padding-left: 0.4em;
+	border-bottom: 1px solid $color-shadow;
+
+	@include mq($from: mobile, $until: desktop) {
+		left: $dimension-nav-menu-small;
+	}
+
+	> button {
+		font-size: 1em;
+		width: 2.5em;
+		height: 2.5em;
+		padding: 0.4em;
+		box-sizing: border-box;
+		margin: 0;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+		border-left: 1px solid white;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		position: relative;
+
+		svg {
+			opacity: 0.6;
+		}
+
+		svg line {
+			stroke: $color-text;
+		}
+
+		&:hover,
+		&.is-selected {
+			opacity: 1;
+			background: lighten($color-action, 55%);
+
+			svg path {
+				fill: $color-action;
+			}
+
+			svg line {
+				stroke: $color-action;
+			}
+		}
+
+		&:hover {
+			background: lighten($color-action, 48%);
+		}
+	}
+
+	.paragraph-styles-dropdown {
+		display: inline-block;
+
+		button {
+			display: block;
+			width: auto;
+			height: auto;
+
+			> * {
+				margin: 0;
+			}
+		}
+	}
+}

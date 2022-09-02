@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Break Editor Node Node builds the expected component 1`] = `
+<div>
+  <div
+    className="non-editable-chunk obojobo-draft--chunks--break viewer width-undefined"
+  >
+    <hr />
+    <span
+      className="invisibleText"
+    />
+  </div>
+</div>
+`;
+
+exports[`Break Editor Node Node component handles tabbing 1`] = `"<div><div class=\\"non-editable-chunk obojobo-draft--chunks--break viewer width-normal\\"><hr><span class=\\"invisibleText\\"></span><div class=\\"buttonbox-box\\" contenteditable=\\"false\\"><div class=\\"box-border\\"><div class=\\"obojobo-draft--components--button is-not-dangerous align-center toggle-size\\" contenteditable=\\"false\\"><button type=\\"button\\" class=\\"button\\" contenteditable=\\"false\\">Toggle Size</button></div></div></div></div></div>"`;

@@ -1,0 +1,92 @@
+@import '../../client/css/defaults';
+
+.repository--module-icon {
+	position: relative;
+	font-family: $font-default;
+	width: $dimension-module-icon;
+	padding: 0.8em;
+	border-radius: 0.25em;
+	background-color: none;
+	font-size: 0.75em;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0);
+	animation: repository-module-slide-up 0.4s ease;
+	cursor: pointer;
+
+	> button {
+		padding: 0;
+		font: inherit;
+		background: none;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		word-wrap: break-word;
+	}
+
+	> a {
+		text-decoration: none;
+		color: black;
+		font-weight: 600;
+
+		.repository--module-icon--menu-control-button {
+			display: none;
+		}
+	}
+
+	input {
+		position: absolute;
+		display: none;
+		z-index: 1;
+		left: 0.3em;
+		top: 0.3em;
+
+		&.is-multi-select-mode {
+			display: block;
+		}
+	}
+
+	&.is-open,
+	&.is-selected {
+		background-color: $color-banner-bg;
+
+		input {
+			display: block;
+		}
+	}
+
+	&.is-new {
+		background-color: lighten($color-action-minor, 15%);
+
+		.repository--module-icon--title {
+			font-weight: bold;
+		}
+	}
+
+	&:hover {
+		border-color: $color-banner-bg;
+
+		.repository--module-icon--image {
+			transform: translate(0, -2px);
+		}
+
+		.repository--module-icon--menu-control-button {
+			display: block;
+		}
+	}
+
+	.repository--module-icon--menu-control-button.is-visible {
+		display: block;
+	}
+}
+
+@keyframes repository-module-slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Editor Node Text builds the expected component 1`] = `
+<div>
+  <div
+    className="text-chunk obojobo-draft--chunks--single-text pad"
+  />
+</div>
+`;

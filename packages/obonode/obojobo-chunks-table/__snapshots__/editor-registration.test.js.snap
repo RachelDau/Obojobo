@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table editor plugins.renderNode renders a Table when passed 1`] = `
+<SlateWrapper
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "type": "ObojoboDraft.Chunks.Table",
+    }
+  }
+/>
+`;
+
+exports[`Table editor plugins.renderNode renders a cell when passed 1`] = `
+<SlateWrapper
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "subtype": "ObojoboDraft.Chunks.Table.Cell",
+    }
+  }
+/>
+`;
+
+exports[`Table editor plugins.renderNode renders a row when passed 1`] = `
+<Memo(Row)
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  element={
+    Object {
+      "subtype": "ObojoboDraft.Chunks.Table.Row",
+    }
+  }
+/>
+`;

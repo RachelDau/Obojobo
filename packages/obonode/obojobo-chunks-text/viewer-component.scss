@@ -1,0 +1,16 @@
+@import '~styles/includes';
+
+.obojobo-draft--chunks--single-text {
+	p {
+		margin: 0;
+	}
+
+	.obo-text {
+		display: block;
+	}
+
+	.align-justify {
+		text-align: justify;
+		white-space: pre-line;
+	}
+}

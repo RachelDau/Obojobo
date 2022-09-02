@@ -1,0 +1,12 @@
+{
+	"type":"ObojoboDraft.Chunks.Figure",
+	"content": {
+		"size": "small",
+		"alt": null,
+		"url": null,
+		"height": null,
+		"width": null,
+		"captionWidth": "image-width"
+	},
+	"children": [{ "text": "" }]
+}

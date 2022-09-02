@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question editor oboToSlate converts an OboNode to a Slate node 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "args": Object {
+        "type": "ObojoboDraft.Chunks.Break",
+      },
+      "mock": "oboToSlate",
+    },
+    Object {
+      "args": Object {
+        "type": "ObojoboDraft.Chunks.MCAssessment",
+      },
+      "mock": "oboToSlate",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "args": Object {},
+          "mock": "oboToSlate",
+        },
+      ],
+      "subtype": "ObojoboDraft.Chunks.Question.Solution",
+      "type": "ObojoboDraft.Chunks.Question",
+    },
+  ],
+  "content": Object {
+    "solution": Object {},
+    "triggers": "mock-triggers",
+  },
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;
+
+exports[`Question editor oboToSlate converts an OboNode to a Slate node without a solution 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "args": Object {
+        "type": "ObojoboDraft.Chunks.Break",
+      },
+      "mock": "oboToSlate",
+    },
+    Object {
+      "args": Object {
+        "type": "ObojoboDraft.Chunks.MCAssessment",
+      },
+      "mock": "oboToSlate",
+    },
+  ],
+  "content": Object {},
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;
+
+exports[`Question editor slateToObo converts a Slate node to an OboNode with content, MCAssessment 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "args": Object {
+        "children": Array [
+          Object {
+            "type": "mockNode",
+          },
+        ],
+        "type": "oboeditor.component",
+      },
+      "mock": "slateToObo",
+    },
+    Object {
+      "args": Object {
+        "type": "ObojoboDraft.Chunks.MCAssessment",
+      },
+      "mock": "slateToObo",
+    },
+  ],
+  "content": Object {
+    "solution": Object {
+      "args": Object {
+        "children": Array [
+          Object {
+            "type": "mockNode",
+          },
+        ],
+        "type": "oboeditor.component",
+      },
+      "mock": "slateToObo",
+    },
+  },
+  "id": undefined,
+  "type": "mockType",
+}
+`;
+
+exports[`Question editor slateToObo converts a Slate node to an OboNode with content, Numeric Assessment 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "args": Object {
+        "children": Array [
+          Object {
+            "type": "mockNode",
+          },
+        ],
+        "type": "oboeditor.component",
+      },
+      "mock": "slateToObo",
+    },
+    Object {
+      "args": Object {
+        "type": "ObojoboDraft.Chunks.NumericAssessment",
+      },
+      "mock": "slateToObo",
+    },
+  ],
+  "content": Object {
+    "solution": Object {
+      "args": Object {
+        "children": Array [
+          Object {
+            "type": "mockNode",
+          },
+        ],
+        "type": "oboeditor.component",
+      },
+      "mock": "slateToObo",
+    },
+  },
+  "id": undefined,
+  "type": "mockType",
+}
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Link component 1`] = `
+<span
+  className="editor--components--mark--link"
+>
+  <a
+    href="http://mock href"
+    title="http://mock href"
+  />
+</span>
+`;

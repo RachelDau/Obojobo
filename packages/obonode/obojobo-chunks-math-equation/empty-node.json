@@ -1,0 +1,11 @@
+{
+	"type":"ObojoboDraft.Chunks.MathEquation",
+	"content": { 
+		"latex": "", 
+		"alt": "", 
+		"align":"", 
+		"label": "", 
+		"size": 1 
+	},
+	"children": [{"text":""}]
+}

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Figure editor plugins.decorate exits when not relevant 1`] = `Array []`;
+
+exports[`Figure editor plugins.decorate exits when not relevant 2`] = `Array []`;
+
+exports[`Figure editor plugins.decorate renders a placeholder 1`] = `
+Array [
+  Object {
+    "anchor": "mock-point",
+    "focus": "mock-point",
+    "placeholder": "Type an image caption here",
+  },
+]
+`;
+
+exports[`Figure editor plugins.renderNode renders a figure when passed 1`] = `
+<SlateWrapper
+  attributes={
+    Object {
+      "dummy": "dummyData",
+    }
+  }
+  dummy="dummyData"
+  node={
+    Object {
+      "content": Object {},
+      "type": "ObojoboDraft.Chunks.Figure",
+    }
+  }
+/>
+`;

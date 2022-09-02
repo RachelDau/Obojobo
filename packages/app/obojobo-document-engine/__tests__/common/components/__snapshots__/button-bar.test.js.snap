@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonBar ButtonBar component 1`] = `
+<div
+  className="obojobo-draft--components--button-bar"
+/>
+`;
+
+exports[`ButtonBar ButtonBar component with attributes 1`] = `
+<div
+  className="obojobo-draft--components--button-bar"
+>
+  <div
+    className="is-selected"
+  >
+    <div
+      className="obojobo-draft--components--button alt-action is-dangerous align-center"
+      contentEditable={false}
+    >
+      <button
+        aria-selected={true}
+        className="button"
+        contentEditable={false}
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;

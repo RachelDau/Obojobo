@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MathEquation MathEquation component 1`] = `
+<div
+  aria-label="y=\\\\frac{1}{x}"
+  className="component obojobo-draft--chunks--math-equation pad align-center"
+  data-focussed={false}
+  data-id="id"
+  data-obo-component={true}
+  data-type="ObojoboDraft.Chunks.MathEquation"
+  id="obo-id"
+  role="math"
+  tabIndex={-1}
+>
+  <div
+    className="non-editable-chunk"
+    contentEditable={false}
+    data-indent={0}
+  >
+    <div
+      aria-hidden={true}
+      className="katex-container"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "mock-katex-render-for-y=\\\\frac{1}{x}-with-options-{\\"displayMode\\":true}",
+        }
+      }
+      style={
+        Object {
+          "fontSize": "1em",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`MathEquation MathEquation component with alt 1`] = `
+<div
+  aria-label="y equals 1 over x"
+  className="component obojobo-draft--chunks--math-equation pad align-center"
+  data-focussed={false}
+  data-id="id"
+  data-obo-component={true}
+  data-type="ObojoboDraft.Chunks.MathEquation"
+  id="obo-id"
+  role="math"
+  tabIndex={-1}
+>
+  <div
+    className="non-editable-chunk"
+    contentEditable={false}
+    data-indent={0}
+  >
+    <div
+      aria-hidden={true}
+      className="katex-container"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "mock-katex-render-for-y=\\\\frac{1}{x}-with-options-{\\"displayMode\\":true}",
+        }
+      }
+      style={
+        Object {
+          "fontSize": "1em",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`MathEquation MathEquation component with error 1`] = `
+<div
+  aria-label="\\\\\\\\"
+  className="component obojobo-draft--chunks--math-equation pad align-center"
+  data-focussed={false}
+  data-id="id"
+  data-obo-component={true}
+  data-type="ObojoboDraft.Chunks.MathEquation"
+  id="obo-id"
+  role="math"
+  tabIndex={-1}
+>
+  <div
+    className="non-editable-chunk"
+    contentEditable={false}
+    data-indent={0}
+  >
+    <div
+      aria-hidden={true}
+      className="katex-container"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div class=\\"katex-error\\" title=\\"mockKatexError\\">\\\\\\\\</div>",
+        }
+      }
+      style={
+        Object {
+          "fontSize": "1em",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`MathEquation MathEquation component with label 1`] = `
+<div
+  aria-label="Equation mockLabel: y=\\\\frac{1}{x}"
+  className="component obojobo-draft--chunks--math-equation pad align-center"
+  data-focussed={false}
+  data-id="id"
+  data-obo-component={true}
+  data-type="ObojoboDraft.Chunks.MathEquation"
+  id="obo-id"
+  role="math"
+  tabIndex={-1}
+>
+  <div
+    className="non-editable-chunk"
+    contentEditable={false}
+    data-indent={0}
+  >
+    <div
+      aria-hidden={true}
+      className="katex-container"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "mock-katex-render-for-y=\\\\frac{1}{x}-with-options-{\\"displayMode\\":true}",
+        }
+      }
+      style={
+        Object {
+          "fontSize": "1em",
+        }
+      }
+    />
+    <div
+      aria-hidden="true"
+      className="equation-label"
+    >
+      mockLabel
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MathEquation MathEquation component with label AND alt 1`] = `
+<div
+  aria-label="Equation mockLabel: y equals 1 over x"
+  className="component obojobo-draft--chunks--math-equation pad align-center"
+  data-focussed={false}
+  data-id="id"
+  data-obo-component={true}
+  data-type="ObojoboDraft.Chunks.MathEquation"
+  id="obo-id"
+  role="math"
+  tabIndex={-1}
+>
+  <div
+    className="non-editable-chunk"
+    contentEditable={false}
+    data-indent={0}
+  >
+    <div
+      aria-hidden={true}
+      className="katex-container"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "mock-katex-render-for-y=\\\\frac{1}{x}-with-options-{\\"displayMode\\":true}",
+        }
+      }
+      style={
+        Object {
+          "fontSize": "1em",
+        }
+      }
+    />
+    <div
+      aria-hidden="true"
+      className="equation-label"
+    >
+      mockLabel
+    </div>
+  </div>
+</div>
+`;

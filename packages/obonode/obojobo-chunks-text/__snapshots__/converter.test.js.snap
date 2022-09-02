@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text editor oboToSlate converts an OboNode to a Slate node 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "text": "mockText",
+        },
+      ],
+      "content": Object {
+        "align": undefined,
+        "hangingIndent": undefined,
+        "indent": 1,
+      },
+      "subtype": "ObojoboDraft.Chunks.Text.TextLine",
+      "type": "ObojoboDraft.Chunks.Text",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "text": "mockText2",
+        },
+      ],
+      "content": Object {
+        "align": "left",
+        "hangingIndent": false,
+        "indent": 0,
+      },
+      "subtype": "ObojoboDraft.Chunks.Text.TextLine",
+      "type": "ObojoboDraft.Chunks.Text",
+    },
+  ],
+  "content": Object {
+    "textGroup": Array [
+      Object {
+        "data": Object {
+          "indent": 1,
+        },
+        "text": Object {
+          "value": "mockText",
+        },
+      },
+      Object {
+        "text": Object {
+          "value": "mockText2",
+        },
+      },
+    ],
+    "triggers": "mock-triggers",
+  },
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;
+
+exports[`Text editor slateToObo converts a Slate node to an OboNode with content 1`] = `
+Object {
+  "children": Array [],
+  "content": Object {
+    "textGroup": Array [
+      Object {
+        "data": Object {},
+        "text": Object {
+          "styleList": Array [
+            Object {
+              "data": Object {},
+              "end": 8,
+              "start": 0,
+              "type": "b",
+            },
+          ],
+          "value": "mockText",
+        },
+      },
+    ],
+  },
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;
+
+exports[`Text editor slateToObo converts a Slate node to an OboNode with triggers 1`] = `
+Object {
+  "children": Array [],
+  "content": Object {
+    "textGroup": Array [
+      Object {
+        "data": Object {},
+        "text": Object {
+          "styleList": Array [
+            Object {
+              "data": Object {},
+              "end": 8,
+              "start": 0,
+              "type": "b",
+            },
+          ],
+          "value": "mockText",
+        },
+      },
+    ],
+    "triggers": "mock-triggers",
+  },
+  "id": "mockKey",
+  "type": "mockType",
+}
+`;
